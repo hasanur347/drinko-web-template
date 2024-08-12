@@ -1,0 +1,401 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Navbar start */
+.logo-design{
+    font-size: 200px;
+}
+.navbar-brand{
+    font-size: 35px !important;
+    font-weight: 700;
+    color: #fff !important;
+    margin-left: 20px;
+}
+.navbar-nav a{
+    color: #fff;
+    font-weight: 450;
+    font-size: 20px;
+}
+.navbar-nav a:hover{
+    color:orange;
+}
+.nav-btn .btn{
+    color: #fff !important;
+}
+.nav-btn .btn:hover{
+    color: #fff !important;
+    background-color: orange !important;
+}
+.dropdown-item{
+    color: #222;
+}
+/* Navbar end */
+
+
+/* bg image secion start */
+#background-image{
+    background: linear-gradient(135deg,#6b11cb1c, #2574fc13), url("./drink-7.avif");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+.intro-text h1{
+    font-size: 80px;
+    font-weight: 700;
+    color:#00274D; 
+    max-width: 550px;
+}
+.intro-text h4{
+    font-size: 30px;
+    font-weight: 600;
+    color:#00274D;
+}
+@media (max-width:590px){
+    .intro-text h1{
+        font-size: 65px;
+    }
+}
+/* bg image secion end */
+
+
+/* item  secion start */
+.card-body .btn-brand{
+    background-color: orange;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0 auto;
+    transition: all .4s linear;
+    color: #fff !important;
+}
+.card-body .btn-brand:hover {
+    background-color: rgb(228, 152, 12);
+}
+/* item secion end */
+
+/* Button  secion start */
+
+.button-group{
+    text-align: center;
+    overflow: hidden;
+    transition: all .4s linear;
+}
+/* ====Button-2==== */
+.button-group .btn-2:hover{
+    transform: translateY(-2px);
+}
+/* ====Button-3==== */
+.button-group .btn-3{
+    background-color: rgba(255, 0, 0, 0.322);
+}
+.button-group .btn-3:hover{
+    transform: scale(1.3);
+    background-color: #198754;
+    color: #fff;
+}
+
+/* ====Button-4==== */
+.btn-4 {
+    outline: none;
+    padding: 0.9rem 2rem;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 500px;
+    overflow: hidden;
+    background: #66ff66;
+    color: ghostwhite;
+}
+
+.btn-4 span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+}
+
+.btn-4:hover span {
+    color: rgba(0, 0, 0, 0.374);
+}
+
+.btn-4::before,
+.btn-4::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.btn-4::before {
+    content: "";
+    background: #0000004e !important;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.btn-4:hover::before {
+    transform: translate3d(100%, 0, 0);
+}
+
+/* ====Button-5==== */
+.btn-5 {
+    background-color: transparent !important;
+    border: 0.125em solid #1A1A1A;
+    border-radius: 10px;
+    color: #3B3B3B !important;
+    display: inline-block;
+    min-height: 50px;
+    width: 90px;
+    outline: none;
+    text-decoration: none;
+    transition: all 300ms linear;
+
+}
+
+.btn-5:hover {
+    color: #1A1A1A !important;
+    background-color: #fff !important;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+/* ====Button-6==== */
+.btn-6 {
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #008cff;
+    text-shadow: none;
+    box-shadow: transparent;
+    border: 1px solid #008cff;
+    transition: 0.5s ease;
+    user-select: none;
+}
+
+.btn-6:hover {
+    color: #ffffff;
+    background: #008cff;
+    border: 1px solid #008cff;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+    box-shadow: 0 0 5px #008cff, 0 0 20px #008cff, 0 0 50px #008cff,
+        0 0 100px #008cff;
+}
+
+/* ====Button-7==== */
+.btn-7 {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 30px !important;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #fff !important;
+    background: transparent !important;
+    transition: ease-out 0.5s;
+    border: 2px solid #725AC1;
+    border-radius: 10px;
+    background-color: #224f3a76 !important;
+}
+
+.btn-7:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #725AC1;
+}
+/* ====Button-8==== */
+.btn-8 {
+    color: #090909 !important;
+    padding: 0.7em 1.7em !important;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #e8e8e8 !important;
+    border: 1px solid #e8e8e8 !important;
+    transition: all 0.3s !important;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff !important;
+}
+
+.btn-8:active {
+    color: #000 !important;
+    box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff !important;
+}
+.btn-8:hover{
+    background-color: none !important;
+    color: none !important;
+}
+/* ====Button-9==== */
+.btn-9 {
+    padding: 15px 30px !important;
+    font-size: 18px !important;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    transition: 0.5s;
+    background: #1e1e1e !important;
+    color: greenyellow !important;
+    box-shadow: 0 0 10px #363636, inset 0 0 10px #363636 !important;
+    animation: bounce 0.5s 1 linear infinite;
+}
+
+.btn-9:hover {
+    animation: bounce 0.5s 1 linear !important;
+}
+
+@keyframes bounce {
+    0% {
+        background: red;
+        transform: scale(0.7, 1.3);
+    }
+
+    25% {
+        background: yellow;
+        transform: scale(1.3, 0.7);
+    }
+
+    50% {
+        background: blue;
+        transform: scale(0.7, 1.3);
+    }
+
+    75% {
+        background: gray;
+        transform: scale(1.3, 0.7);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+/* ====Button-10==== */
+.btn-10 {
+    font-size: 18px !important;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+    padding: 14px 28px !important;
+    border: 3px solid #FF0072 !important;
+    border-radius: 2px;
+    color: #FF0072 !important;
+    transition: 0.3s ease all;
+    position: relative;
+    z-index: 1;
+    background-color: rgba(128, 128, 128, 0.314) !important;
+}
+
+.btn-10:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: #FF0072 !important;
+    z-index: -1;
+}
+
+.btn-10:hover {
+    color: white !important;
+}
+
+.btn-10:hover:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+/* Button secion end */
+
+/* avility section */
+.list-group-item{
+    font-size: 25px;
+    color: red;
+}
+
+/* pagination section */
+.page-link:active{
+    background-color: orange !important;
+    color: #fff !important;
+}
+
+/* =========Form========= */
+.form-control{
+    border-color: rgba(255, 166, 0, 0.504) !important;
+}
+.form-control:focus{
+    box-shadow: 0 0 0 0.2rem rgba(255, 165, 0, 0.5) !important;
+}
+
+
+.custom-radio {
+    border: 0.15em solid rgba(0, 0, 0, 0.25) !important;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    outline: none;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.custom-radio:checked::before {
+    content: '';
+    display: block;
+    width: 0.6em;
+    height: 0.6em;
+    border-radius: 50%;
+    background-color: rgba(255, 165, 0, 1) !important; /* Orange color for checked state */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 0 0.2rem rgba(255, 165, 0, 0.5) !important;
+}
+
+/* =======================Footer Section================================= */
+footer {
+    background: #333333;
+}
+
+footer h5 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+footer p, footer ul, footer a {
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #f76b1c;
+}
+
+footer .social-icons i {
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+}
+
+footer .social-icons a {
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: #f76b1c;
+}
+
